@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Formular Beispiel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Beispiel-Formular mit Bootstrap</h2>
+        <form>
+            <div class="form-group">
+                <label for="textFeld">Textfeld:</label>
+                <input type="text" class="form-control" id="textFeld" placeholder="Geben Sie Ihren Namen ein">
+            </div>
+            <div class="form-group">
+                <label for="emailFeld">E-Mail:</label>
+                <input type="email" class="form-control" id="emailFeld" placeholder="Ihre E-Mail-Adresse">
+            </div>
+            <div class="form-group">
+                <label for="passwortFeld">Passwort:</label>
+                <input type="password" class="form-control" id="passwortFeld" placeholder="Ihr Passwort">
+            </div>
+            <div class="form-group">
+                <label for="textarea">Textbereich:</label>
+                <textarea class="form-control" id="textarea" rows="4" placeholder="Ihre Nachricht"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="selectFeld">Dropdown-Auswahl:</label>
+                <select class="form-control" id="selectFeld">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dateFeld">Datum:</label>
+                <input type="date" class="form-control" id="dateFeld">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkboxFeld">
+                <label class="form-check-label" for="checkboxFeld">Checkbox auswählen</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radioOption1" name="radioOptions">
+                <label class="form-check-label" for="radioOption1">Option 1</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radioOption2" name="radioOptions">
+                <label class="form-check-label" for="radioOption2">Option 2</label>
+            </div>
+            <div class="form-group">
+                <label for="fileInput">Datei auswählen:</label>
+                <input type="file" class="form-control-file" id="fileInput">
+            </div>
+            
+            <div class="form-group">
+                <label for="rangeInput">Bereichsschieberegler:</label>
+                <input type="range" class="form-control-range" id="rangeInput" min="0" max="100" step="1">
+            </div>
+            <div class="form-group">
+                <label for="multiSelect">Mehrfachauswahl:</label>
+                <select multiple class="form-control" id="multiSelect">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Benutzername">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Button</button>
+    </div>
+</div>
+<div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck1">
+    <label class="custom-control-label" for="customCheck1">Benutzerdefinierte Checkbox</label>
+</div>
+
+<div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="customRadio1" name="customRadio">
+    <label class="custom-control-label" for="customRadio1">Benutzerdefinierter Radiobutton 1</label>
+</div>
+<div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="customRadio2" name="customRadio">
+    <label class="custom-control-label" for="customRadio2">Benutzerdefinierter Radiobutton 2</label>
+</div>
+<input type="text" class="form-control form-control-lg" placeholder="Großes Eingabefeld">
+<input type="text" class="form-control form-control-sm" placeholder="Kleines Eingabefeld">
+<div class="form-group">
+    <label for="validationInput">Eingabefeld mit Validierung:</label>
+    <input type="text" class="form-control is-invalid" id="validationInput" placeholder="Eingabe erforderlich">
+    <div class="invalid-feedback">
+        Bitte geben Sie einen Wert ein.
+    </div>
+</div>
+
+<fieldset>
+    <legend>Benutzerinformationen</legend>
+    <!-- Hier kommen deine Eingabefelder -->
+</fieldset>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text">€</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Betrag">
+</div>
+
+<input type="text" class="form-control" id="autocompleteInput" autocomplete="off">
+
+<div class="form-row">
+    <div class="col">
+        <input type="text" class="form-control" placeholder="Vorname">
+    </div>
+    <div class="col">
+        <input type="text" class="form-control" placeholder="Nachname">
+    </div>
+</div>
+
+            <button type="submit" class="btn btn-primary">Absenden</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+  
+    .custom-form-control {
+        background-color: #f0f0f0;
+        color: #333;
+        border: 2px solid #ccc;
+    }
+
+    .custom-form-control:focus {
+        border-color: #007bff;
+    }
+
